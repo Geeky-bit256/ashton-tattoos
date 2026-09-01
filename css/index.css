@@ -179,6 +179,121 @@ body {
 }
 
 
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+  padding: 6rem 1.5rem;
+  background: #0e0e0e;
+  color: #f5f1ea;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.services__intro {
+  margin-bottom: 3rem;
+}
+
+.services__eyebrow {
+  margin-bottom: 1rem;
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #c8ad8a;
+}
+
+.services__title {
+  max-width: 30rem;
+  font-family: Georgia, serif;
+  font-size: clamp(2.8rem, 11vw, 5rem);
+  font-weight: 400;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.services__title span {
+  display: block;
+  font-style: italic;
+  text-transform: none;
+  color: #c8ad8a;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.services__grid {
+  display: grid;
+  gap: 3rem;
+}
+
+
+/* =========================
+   SERVICES CARD
+========================= */
+
+.service-card {
+  border-top: 1px solid #383838;
+  padding-top: 1.5rem;
+}
+
+.service-card__image {
+  width: 100%;
+  height: 24rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.service-card__number {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: #8d8d8d;
+}
+
+.service-card h3 {
+  margin: 0 0 1rem;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.service-card p {
+  max-width: 30rem;
+  margin: 0 0 1.5rem;
+  color: #bcbcbc;
+  line-height: 1.7;
+}
+
+.service-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  color: #f5f1ea;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+
+
 /*======================================
         RESPONSIVE DESIGN
 ======================================*/
@@ -186,6 +301,8 @@ body {
 
 /* ---------- Tablets ---------- */
 @media(min-width:600px){
+  
+  /* HERO */
   .hero {
     display: grid;
     grid-template-columns: 45% 55%;
@@ -216,6 +333,24 @@ body {
 
   .about__content {
     padding-right: 2rem;
+  }
+  
+  /* SERVICES */
+  .services {
+    padding: 8rem 8%;
+  }
+  
+  .services__intro {
+    margin-bottom: 5rem;
+  }
+  
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .service-card__image {
+    height: 32rem;
   }
   
   
