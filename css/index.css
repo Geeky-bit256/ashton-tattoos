@@ -552,6 +552,81 @@ body {
 }
 
 
+/* =========================
+   BOOKING CTA
+========================= */
+
+.booking {
+  padding: 7rem 1.5rem;
+  background: #e8dfd2;
+  color: #0e0e0e;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.booking__content {
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking__eyebrow {
+  margin-bottom: 1.25rem;
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #8d7252;
+}
+
+.booking__title {
+  font-family: Georgia, serif;
+  font-size: clamp(3rem, 12vw, 5.5rem);
+  font-weight: 400;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.booking__title span {
+  display: block;
+  font-style: italic;
+  text-transform: none;
+  color: #8d7252;
+}
+
+.booking__text {
+  max-width: 32rem;
+  margin: 2rem auto;
+  line-height: 1.7;
+  color: #444;
+}
+
+
+.booking__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #0e0e0e;
+  color: #f5f1ea;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.booking__button i {
+  font-size: 1.5rem;
+}
+
+.booking__button:hover {
+  transform: translateY(-3px);
+}
+
+
 
 
 
