@@ -1,0 +1,255 @@
+
+/* =========================
+   GALLERY WORK
+========================= */
+
+.gallery-hero { 
+  padding: 8rem 1.5rem 5rem; 
+  background: #0e0e0e; 
+  color: #f5f1ea; 
+  display: flex; 
+  align-items: flex-end; 
+} 
+
+.gallery-hero__content { 
+  max-width: 45rem; 
+} 
+
+.gallery-hero__eyebrow { 
+  margin-bottom: 1rem; 
+  font-family: Georgia, serif; 
+  font-style: italic; 
+  color: #c8ad8a; 
+} 
+
+.gallery-hero__title { 
+  font-family: Georgia, serif; 
+  font-size: clamp(4rem, 15vw, 8rem); 
+  font-weight: 400; 
+  line-height: 0.85; 
+  text-transform: uppercase;
+} 
+
+.gallery-hero__title span { 
+  display: block; 
+  color: #c8ad8a; 
+  font-style: italic; 
+  text-transform: none; 
+} 
+
+.gallery-hero__description { 
+  max-width: 32rem; 
+  margin-top: 2rem; 
+  color: #a9a9a9; 
+  line-height: 1.7; 
+} 
+
+
+/* =========================
+   ART GALLERY
+========================= */
+
+.art-gallery { 
+  padding: 6rem 1.5rem; 
+  background: #f5f1ea; 
+  color: #0e0e0e; 
+}  
+
+.art-gallery__intro { 
+  margin-bottom: 3rem;
+} 
+
+.art-gallery__eyebrow { 
+  margin-bottom: 1rem; 
+  font-family: Georgia, serif; 
+  font-style: italic; 
+  color: #8d7252; 
+} 
+
+.art-gallery__title { 
+  font-family: Georgia, serif; 
+  font-size: clamp(3rem, 12vw, 6rem); 
+  font-weight: 400; 
+  line-height: 0.9; 
+  text-transform: uppercase; 
+} 
+
+.art-gallery__title span { 
+  display: block; 
+  color: #8d7252; 
+  font-style: italic; 
+  text-transform: none; 
+}  
+
+
+.art-gallery__grid { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem; 
+} 
+
+.art-gallery__item { 
+  height: 18rem; 
+  overflow: hidden;
+} 
+
+.art-gallery__item--large { 
+  grid-column: 1 / -1; 
+  height: 30rem;
+}
+  
+.art-gallery__item--wide { 
+  grid-column: 1 / -1; 
+  height: 20rem;
+  
+}
+
+.art-gallery__item img { 
+  width: 100%; 
+  height: 100%; 
+  display: block; 
+  object-fit: cover;
+  transition: transform 0.6s ease;
+} 
+
+.art-gallery__item:hover img { 
+  transform: scale(1.04);
+} 
+
+
+/* =========================
+   GALLERY BOOKING
+========================= */
+
+
+.gallery-booking { 
+  padding: 7rem 1.5rem; 
+  background: #0e0e0e; 
+  color: #f5f1ea; 
+  text-align: center;
+} 
+
+
+.gallery-booking__content { 
+  max-width: 42rem; 
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+} 
+
+.gallery-booking__eyebrow {
+  margin-bottom: 1rem; 
+  font-family: Georgia, serif; 
+  font-style: italic; 
+  color: #c8ad8a;
+} 
+
+.gallery-booking__title { 
+  font-family: Georgia, serif; 
+  font-size: clamp(3.2rem, 12vw, 6rem);
+  font-weight: 400; 
+  line-height: 0.9; 
+  text-transform: uppercase;
+} 
+
+.gallery-booking__title span { 
+  display: block; 
+  color: #c8ad8a; 
+  font-style: italic; 
+  text-transform: none;
+}
+
+.gallery-booking__text { 
+  max-width: 30rem; 
+  margin: 2rem auto; 
+  color: #aaa; 
+  line-height: 1.7;
+}
+
+
+.gallery-booking__button { 
+  display: inline-flex; 
+  align-items: center; 
+  gap: 1rem; 
+  padding: 1rem 1.5rem; 
+  background: #f5f1ea; 
+  color: #0e0e0e; 
+  text-decoration: none; 
+  text-transform: uppercase; 
+  font-size: .8rem; 
+  letter-spacing: 0.08em; 
+  transition: transform 0.3s ease;
+  
+} 
+
+.gallery-booking__button i{
+  font-size: 1.2rem;
+}
+
+.gallery-booking__button:hover { transform: translateY(-3px);
+  
+} 
+
+
+
+
+
+/*======================================
+        RESPONSIVE DESIGN
+======================================*/
+
+
+/* ---------- Tablets ---------- */
+@media(min-width:768px){
+  
+  .gallery-hero {
+    min-height: 75vh;
+    padding: 6rem 8%;
+  }
+
+  .gallery-hero__description {
+    margin-left: 8rem;
+  }
+  
+  .art-gallery {
+    padding: 8rem 8%;
+  }
+  
+  .art-gallery__intro {
+    margin-bottom: 5rem;
+  }
+
+  .art-gallery__grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 18rem;
+    gap: 1rem;
+  }
+
+  .art-gallery__item {
+    height: auto;
+  }
+
+  .art-gallery__item--large {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: auto;
+  }
+
+  .art-gallery__item--wide {
+    grid-column: span 2;
+    height: auto;
+  }
+  
+  .gallery-booking {
+    padding: 10rem 8%;
+  }
+
+  .gallery-booking__title {
+    font-size: clamp(4rem, 7vw, 7rem);
+  }
+
+}
+
+
+
