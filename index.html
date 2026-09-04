@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <meta name="description" content="Ashton creates custom tattoos made to be personal, bringing your ideas and stories to life">
+    
     <title>Ashton | Tattoo Artist</title>
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
     
     <!-- Font Awesome -->
 
@@ -15,6 +18,43 @@
   </head>
   
   <body>
+    
+    <header class="header">
+      
+      <a href="index.html" class="header__logo">Ashton</a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="header__nav">
+        
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#work">Work</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+      
+      <a href="https://wa.me/" class="header__cta" >Book Now</a>
+      
+      <!-- Mobile Menu Button -->
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" >
+        
+        <span></span>
+        <span></span>
+      </button>
+      
+    </header>
+    
+    <!-- MOBILE MENU --> 
+    <nav class="mobile-menu">
+      
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#work">Work</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="https://wa.me/" class="mobile-menu__booking" ><i class="fab fa-whatsapp"></i>Book a Session</a> 
+    </nav> 
+    
     <main>
       
       <section class="hero">
@@ -236,7 +276,32 @@
 
       </section>
       
-      
+      <!-- PRICING -->
+      <section class="pricing" id="pricing">
+        
+        <div class="pricing__content">
+          
+          <p class="pricing__eyebrow">Pricing</p>
+          
+          <h2 class="pricing__title">
+            Every Piece Is
+            <span>Personal.</span>
+          </h2>
+          
+          <p class="pricing__text">
+            Every tattoo and drawing is different. Pricing depends on the size, placement, detail and time required to create your piece.
+          </p>
+          
+          <p class="pricing__text">
+            Tell Ashton about your idea and she'll provide a personalised quote.
+          </p>
+          
+          <a href="https://wa.me/" class="pricing__button">
+            Get A Quote
+          </a>
+        </div>
+      </section>
+
       <!-- BOOKING CTA -->
       <section class="booking" id="booking">
         
@@ -309,15 +374,15 @@
           <div class="footer__socials">
           
             <a href="#" aria-label="Instagram">
-              Instagram
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram
             </a>
           
             <a href="#" aria-label="Facebook">
-              Facebook
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>Facebook
             </a>
           
             <a href="#" aria-label="TikTok">
-              TikTok
+              <i class="fa-brands fa-tiktok" aria-hidden="true"></i>TikTok
             </a>
 
           </div>
@@ -334,11 +399,13 @@
           <h3>Let's Talk</h3>
         
           <a href="https://wa.me/">
-            WhatsApp
+            <i class="fab fa-whatsapp"></i>+27 12 345 6789
           </a>
         
+        
           <a href="mailto:hello@example.com">
-            Email
+            <i class="far fa-envelope"></i>
+            info@ashtontattoos.com
           </a>
 
         </div>
@@ -353,12 +420,14 @@
         </p>
       
         <p>
-          Designed by Waltman Labs
+          Designed by <a href="https://geeky-bit256.github.io/waltman-labs/">Waltman Labs</a>
         </p>
 
       </div>
 
     </footer>
+    
+    <script src="js/index.js"></script>
 
   </body>
   

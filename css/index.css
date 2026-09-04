@@ -1,24 +1,3 @@
-/* =========================
-   RESET
-========================= */
-
-/* Base: Mobile */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  background: #0b0f13;
-  color: #ffffff;
-  /*line-height: 1.6;*/
-}
 
 
 /* =========================
@@ -549,6 +528,69 @@ body {
   padding-bottom: 0.5rem;
 }
 
+/* =========================
+   PRICING
+========================= */
+
+.pricing {
+  padding: 7rem 1.5rem;
+  background: #0e0e0e;
+  color: #f5f1ea;
+}
+
+.pricing__content {
+  max-width: 45rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing__eyebrow {
+  margin-bottom: 1rem;
+  color: #c8ad8a;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.pricing__title {
+  margin-bottom: 1.5rem;
+  font-family: Georgia, serif;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.pricing__title span {
+  display: block;
+  font-style: italic;
+}
+
+.pricing__text {
+  max-width: 35rem;
+  margin: 0 auto 1rem;
+  color: rgba(245, 241, 234, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.pricing__button {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #c8ad8a;
+  color: #f5f1ea;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.pricing__button:hover {
+  background: #c8ad8a;
+  color: #0e0e0e;
+}
+
+
 
 /* =========================
    BOOKING CTA
@@ -638,6 +680,12 @@ body {
 /* ---------- Tablets ---------- */
 @media(min-width:600px){
   
+
+  
+}
+/* ---------- Desktop ---------- */
+@media(min-width:900px){
+  
   /* HERO */
   .hero {
     display: grid;
@@ -652,11 +700,10 @@ body {
     height: 100vh;
   }
   
-    /* ABOUT */
+  /* ABOUT */
   .about {
     min-height: 100vh;
     padding: 7rem 8%;
-    
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -684,7 +731,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
   }
-
+  
   .service-card__image {
     height: 32rem;
   }
@@ -745,6 +792,10 @@ body {
     height: auto;
   }
   
+  .pricing {
+    padding: 10rem 4rem;
+  }
+  
   /* BOOKING CTA */
   .booking {
     padding: 8rem 8%;
@@ -753,14 +804,6 @@ body {
   .booking__title {
     font-size: clamp(4rem, 7vw, 7rem);
   }
-  
-  
-  
-  
-  
-}
-/* ---------- Desktop ---------- */
-@media(min-width:900px){
   
 }
 
