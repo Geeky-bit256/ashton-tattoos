@@ -6,7 +6,7 @@
 
 | Desktop | Mobile |
 |---|---|
-| ![Ashton Tattoos Desktop](images/hero-desktop.jpg) | ![Ashton Tattoos Mobile](images/hero-mobile.jpg) |
+| ![Ashton Tattoos Desktop](images/demo/hero-desktop.jpg) | ![Ashton Tattoos Mobile](images/demo/hero-mobile.jpg) |
 
 ## Overview
 
